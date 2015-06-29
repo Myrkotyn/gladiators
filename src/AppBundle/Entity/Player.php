@@ -8,7 +8,7 @@ use Fresh\DoctrineEnumBundle\Validator\Constraints as DoctrineAssert;
 /**
  * Class Player
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\PlayerRepository")
  * @ORM\Table(name="player")
  *
  * @author Oleg Kachinsky <logansoleg@gmail.com>

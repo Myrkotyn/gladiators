@@ -22,8 +22,13 @@ class DefaultController extends Controller
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function roterAction()
+    public function rosterAction()
     {
-        return $this->render('frontend/default/roster.html.twig');
+        $rosterRepository = $this->getDoctrine()->getRepository('AppBundle:Player');
+        $roster = $rosterRepository->getPlayersInRoster();
+
+        return $this->render('frontend/default/roster.html.twig', [
+            'roster' => $roster,
+        ]);
     }
 }
