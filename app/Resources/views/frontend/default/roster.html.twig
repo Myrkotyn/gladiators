@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    Roster page
+
+    <table>
+        <caption>Roster</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Number</th>
+                <th>Year</th>
+                <th>Height</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for player in roster %}
+                <tr>
+                    <td>{{ player.getName() }}</td>
+                    <td>{{ player.getPosition() }}</td>
+                    <td>{{ player.getNumber() }}</td>
+                    <td>{{ player.getBirthday()|date('d.m.Y') }}</td>
+                    <td>{{ player.getHeight() }}</td>
+                    <td>{{ player.getWeight() }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
