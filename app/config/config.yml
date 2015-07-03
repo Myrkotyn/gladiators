@@ -4,6 +4,8 @@ imports:
     - { resource: services.yml }
     - { resource: doctrine/doctrine.yml }
     - { resource: sonata/sonata.yml }
+    - { resource: sonata/admin.yml }
+    - { resource: @AppBundle/Resources/config/admin.yml }
 
 framework:
     #esi:             ~
