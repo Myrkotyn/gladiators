@@ -70,6 +70,13 @@ class Player
     private $weight;
 
     /**
+     * @var bool $inRoster Player in roster
+     *
+     * @ORM\Column(type="boolean")
+     */
+    private $inRoster = false;
+
+    /**
      * Get id
      *
      * @return int Id
@@ -219,6 +226,30 @@ class Player
     public function setWeight($weight)
     {
         $this->weight = $weight;
+
+        return $this;
+    }
+
+    /**
+     * Get inRoster
+     *
+     * @return boolean InRoster
+     */
+    public function isInRoster()
+    {
+        return $this->inRoster;
+    }
+
+    /**
+     * Set inRoster
+     *
+     * @param boolean $inRoster inRoster
+     *
+     * @return $this
+     */
+    public function setInRoster($inRoster)
+    {
+        $this->inRoster = $inRoster;
 
         return $this;
     }
