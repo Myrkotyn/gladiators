@@ -1,0 +1,9 @@
+services:
+    sonata.admin.post:
+        class: AppBundle\Admin\PlayerAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Team", label: "Player" }
+        arguments:
+            - ~
+            - AppBundle\Entity\Player
+            - ~

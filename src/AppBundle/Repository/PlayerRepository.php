@@ -20,6 +20,9 @@ class PlayerRepository extends EntityRepository
     {
         $queryBuilder = $this->createQueryBuilder('p');
 
-        return $queryBuilder->getQuery()->getResult();
+        return $queryBuilder
+            ->where($queryBuilder->expr()->eq('p.inRoster', true))
+            ->getQuery()
+            ->getResult();
     }
 }

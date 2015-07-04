@@ -1,7 +1,15 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}
+    Roster
+{% endblock %}
+
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
-    Roster page
+    <h1>Roster page</h1>
 
     <table>
         <caption>Roster</caption>

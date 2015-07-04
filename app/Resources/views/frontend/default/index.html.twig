@@ -1,7 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    Homepage.
+{% block title %}
+    Homepage
+{% endblock %}
 
-    <a href="{{ path('roster') }}">Roster page</a>
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <h1>Homepage</h1>
 {% endblock %}

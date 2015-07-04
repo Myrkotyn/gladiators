@@ -27,6 +27,7 @@ class AppKernel extends Kernel
             // Doctrine Bundle
             new Fresh\DoctrineEnumBundle\FreshDoctrineEnumBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
