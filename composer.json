@@ -11,8 +11,8 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.6.*",
-        "doctrine/orm": "~2.2,>=2.2.3,<2.5",
-        "doctrine/dbal": "<2.5",
+        "doctrine/orm": "~2.5",
+        "doctrine/dbal": "~2.5",
         "doctrine/doctrine-bundle": "~1.2",
         "twig/extensions": "~1.0",
         "symfony/assetic-bundle": "~2.3",
@@ -28,7 +28,10 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "fresh/doctrine-enum-bundle": "v3.2",
         "doctrine/migrations": "1.0.*@dev",
-        "doctrine/doctrine-migrations-bundle": "1.0.*"
+        "doctrine/doctrine-migrations-bundle": "1.0.*",
+
+        "stof/doctrine-extensions-bundle": "1.2.*@dev",
+        "logans/news-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

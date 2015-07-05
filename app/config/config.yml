@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: doctrine/doctrine.yml }
+    - { resource: doctrine/extensions.yml }
     - { resource: sonata/sonata.yml }
     - { resource: sonata/admin.yml }
     - { resource: @AppBundle/Resources/config/admin.yml }
